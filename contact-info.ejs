@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="icon" href="data:,">
+    <title>Data From the Client</title>
+    <style>
+        h3{
+            color: black;
+        }
+        html{
+            border: 1px solid black;
+        }
+    </style>
+    </head>
+     
+    <body>
+        
+        <h3>Contact Information Submitted</h3>
+        <p>Name: <%= post["prefix"] %> .  <%= post["firstName"] %> <%= post["lastName"] %></p>
+        <p>Address: <%= post["street"] %>, <%= post["city"] %> , <%= post["state"] %> ,  <%= post["zip"]%></p>
+        
+        <% if(post["phoneCB"] == "on" || post["anyCB"] == "on"){ %>
+            <p> Contact by Phone: <%=post["phone"] %></p>
+        <%}
+        else { %>
+            <p> Contact by Phone: No</p>
+        <% } %>
+        <% if(post["mailCB"] == "on" || post["anyCB"] == "on"){ %>
+            <p> Contact by Mail: Yes</p>
+        <% }
+         else { %>
+            <p>Contact by Mail: No</p>
+        <% } %>
+        <% if (post["emailCB"]== "on" || post["anyCB"] == "on"){ %>
+            <p>Contact by Email: <%=post["email"] %></p>
+        <%}
+         else { %>
+            <p>Contact by Email: No</p>
+        <% } %>
+           
+    <p><a href ="contactsList.html" > All contacts here</a> <a href = "mailer.html">Enter new contact</a></p> 
+    </body>
+</html>
+
