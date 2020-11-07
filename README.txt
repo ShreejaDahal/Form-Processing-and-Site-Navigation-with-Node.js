@@ -1,3 +1,5 @@
+Assignment for Web Application Course
+
 For this assignment you are asked to create a fairly fully functioning web application that gathers and lists contact information.  You will write server code in Node.js and use EJS for dynamic page generation.  You must submit all files used by your application (the javascript, ejs, and anything else).  Please note, any links or paths to files or pages need to be written in such a way that your program doesn’t need to be run on a particular machine, with a particular directory structure.
 
 Part 1:    Design an HTML page (file) that collects the following information for a direct mail marketer:
